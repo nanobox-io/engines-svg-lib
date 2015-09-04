@@ -1,0 +1,46 @@
+doctype html
+html(lang="en")
+  
+  head
+    title Nanobox SVG
+
+    link(href="stage/css/stage.css", rel="stylesheet")
+    //- build:css nanobox-engines.css
+    link(href="css/nanobox-engines.css", rel="stylesheet")
+    //- endbuild
+
+  body
+    img.shadow-icon(data-src="badge-ruby")
+    img.shadow-icon(data-src="badge-nodejs")
+    img.shadow-icon(data-src="badge-python")
+    img.shadow-icon(data-src="badge-php")
+    img.shadow-icon(data-src="badge-scala")
+    img.shadow-icon(data-src="badge-go")
+    img.shadow-icon(data-src="badge-elixir")
+    img.shadow-icon(data-src="badge-java")
+    img.shadow-icon(data-src="badge-erlang")
+    img.shadow-icon(data-src="badge-clojure")
+    img.shadow-icon(data-src="badge-lua")
+    img.shadow-icon(data-src="badge-c")
+    img.shadow-icon(data-src="badge-rust")
+    img.shadow-icon(data-src="badge-perl")
+    img.shadow-icon(data-src="badge-lisp")
+    img.shadow-icon(data-src="badge-none")
+    img.shadow-icon(data-src="logo-horizontal")
+
+
+    //- build:js js/libs.js
+    script(src="bower-libs/jquery/dist/jquery.js")
+    script(src="bower-libs/jade/runtime.js")
+    script(src="bower-libs/shadow-icons/rel/app.js")
+    //- endbuild
+
+    //- build:js js/nanobox-engines.js
+    script(src="js/nanobox-engines.js")
+    //- endbuild
+    
+    script(src="stage/js/init.js")
+    
+    //- build:remove 
+    script(src="http://localhost:35729/livereload.js")
+    //- endbuild

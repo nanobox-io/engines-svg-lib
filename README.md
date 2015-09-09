@@ -33,6 +33,12 @@ img.shadow-icon(data-src="badge-perl")
 img.shadow-icon(data-src="badge-lisp")
 img.shadow-icon(data-src="badge-none")
 img.shadow-icon(data-src="logo-horizontal")
+img.shadow-icon(data-src="small-guides")
+img.shadow-icon(data-src="small-engines")
+img.shadow-icon(data-src="small-new-engine")
+img.shadow-icon(data-src="search")
+img.shadow-icon(data-src="star")
+img.shadow-icon(data-src="downloads")
 ```
 
 This must be called after the page has loaded:
